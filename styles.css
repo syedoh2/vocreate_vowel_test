@@ -1,0 +1,128 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html, body {
+  height: 100%;
+  width: 100%;
+  font-family: Arial, sans-serif;
+}
+
+/* Main container with horizontal layout */
+.container {
+  display: flex;
+  height: 100vh;
+}
+
+/* Left section for controls and instructions */
+.left-section {
+  width: 30%; /* Adjust this width as needed */
+  display: flex;
+  flex-direction: column;
+  background-color: #f8f8f8;
+  padding: 20px;
+  border-right: 2px solid #ccc;
+  overflow-y: auto;
+}
+
+.top-section {
+  display: flex;
+  flex-direction: column;
+  align-items: left;
+  margin-bottom: 20px;
+  margin-top: 40px;
+}
+
+#status {
+  font-size: 1.2em;
+  margin-bottom: 10px;
+}
+
+#start-btn {
+  padding: 10px 20px;
+  font-size: 1em;
+  cursor: pointer;
+  margin-bottom: 10px;
+  width: 50%;
+}
+
+.mic-icon {
+  width: 30px;
+  height: 30px;
+  background-color: red;
+  border-radius: 50%;
+  margin: 10px;
+}
+
+.mic-icon.active {
+  background-color: green;
+}
+
+.mic-input-bar {
+  width: 100%;
+  height: 10px;
+  background-color: #ddd;
+  border-radius: 5px;
+  margin: 10px 0;
+}
+
+.command-history {
+  font-size: 0.9em;
+  max-height: 100px;
+  overflow-y: auto;
+  border: 1px solid #ccc;
+  padding: 5px;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+.bottom-section {
+  margin-top: auto; /* Pushes instructions to the bottom of the left section */
+  text-align: left;
+}
+
+.instructions {
+  font-size: 0.9em;
+}
+
+.instructions ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+.instructions li {
+  margin: 5px 0;
+}
+
+/* Right section for canvas */
+.right-section {
+  width: 70%; /* Adjust this width as needed */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #ffffff;
+  overflow: hidden;
+}
+
+.canvas-section {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  overflow: hidden;
+  background-color: #ddd;
+}
+
+canvas {
+  display: block;
+  background-color: white;
+  border-radius: 20px;
+  margin: 0 auto; /* Center the canvas */
+  max-width: 100vw; /* Maximum width to the viewport width */
+  max-height: 80vh; /* Maximum height to the viewport height */
+}

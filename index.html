@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Voice Controlled Drawing Tool</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <!-- Left Section with controls and instructions -->
+        <div class="left-section">
+            <h1>VoCreate</h1>
+            <h2>Vowel Sound Control Test</h2>
+            <div class="top-section">
+                <div id="status">Not Listening</div>
+                <button id="start-btn">Activate Listening</button>
+                <div id="mic-icon" class="mic-icon"></div>
+                <div id="mic-input-bar" class="mic-input-bar"></div>
+                <div id="command-history" class="command-history"></div>
+            </div>
+            <div class="bottom-section">
+                <div class="instructions">
+                    <h2>Voice Commands</h2>
+                    <ul>
+                        <li>Vowel "a" as in car - Move Up</li>
+                        <li>Vowel "e" as in feel - Move Right</li>
+                        <li>Vowel "o" as in boot - Move Down</li>
+                        <li>Vowel "i" as in hill - Move Left</li>
+                        <li>---</li>
+                        <li>"clear" - Clear canvas and reset the dot</li>
+                        <li>"stop" - Pause movement</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <!-- Right Section with the Canvas -->
+        <div class="right-section">
+            <div class="canvas-section">
+                <canvas id="myCanvas"></canvas>
+            </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
